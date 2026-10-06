@@ -1,0 +1,72 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: fix/updatego
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/edubadges/badgr-server:
+      branch: develop
+      repo: https://github.com/edubadges/badgr-server
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/edubadges/badgr-server git:
+        commands:
+        - /usr/bin/env sh .sqa/script.white_focused_puffin.sh
+        container: qc.acc_cadet_ambitious_piranha
+  QC.Doc:
+    repos:
+      github.com/edubadges/badgr-server find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.moss_daring_osprey.sh
+        container: qc.doc_steel_bright_narwhal
+      github.com/edubadges/badgr-server git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gray_quirky_rabbit.sh
+        container: qc.doc_dusk_reserved_termite
+      github.com/edubadges/badgr-server markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lemon_supportive_catfish.sh
+        container: qc.doc_dahlia_eager_hedgehog
+  QC.Lic:
+    repos:
+      github.com/edubadges/badgr-server licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.vermilion_amiable_beaver.sh
+        container: qc.lic_fog_perky_penguin
+  QC.Sec:
+    repos:
+      github.com/edubadges/badgr-server bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.horizon_goofy_frog.sh
+        container: qc.sec_royal_audacious_thrush
+  QC.Sty:
+    repos:
+      github.com/edubadges/badgr-server flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.steel_silly_spren.sh
+        container: qc.sty_navy_zealous_parrot
+      github.com/edubadges/badgr-server hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.strawberry_sympathetic_serval.sh
+        container: qc.sty_amaranth_zany_quoll
+      github.com/edubadges/badgr-server jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.slate_cautious_rattlesnake.sh
+        container: qc.sty_butter_bright_owl
+  QC.Uni:
+    repos:
+      github.com/edubadges/badgr-server pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.apricot_industrious_marmoset.sh
+        container: qc.uni_carmine_insightful_newt
+  QC.Ver:
+    repos:
+      github.com/edubadges/badgr-server get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.ash_authentic_warthog.sh
+        container: qc.ver_raspberry_assured_mink
+timeout: 5400
