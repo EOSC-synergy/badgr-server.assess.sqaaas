@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/edubadges/badgr-server &&
-    flake8 .
+cd github.com/PalomoIFCA/badgr-server &&
+    find_doc_files.py --file_type all
 )

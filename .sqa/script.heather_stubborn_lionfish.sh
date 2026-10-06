@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/edubadges/badgr-server &&
-    hadolint Dockerfile badgr-server/Dockerfile mysql/Dockerfile --failure-threshold error
+cd github.com/PalomoIFCA/badgr-server &&
+    licensee detect . --confidence 60 --json 
 )
