@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/badgr-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.turquoise_open_rhinoceros.sh
-        container: qc.acc_orchid_ardent_tortoise
+        - /usr/bin/env sh .sqa/script.wine_positive_wolf.sh
+        container: qc.acc_grege_empathetic_meerkat
   QC.Doc:
     repos:
       github.com/PalomoIFCA/badgr-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.strawberry_zany_eel.sh
-        container: qc.doc_turmeric_romantic_cassowary
+        - /usr/bin/env sh .sqa/script.fandango_apathetic_gazelle.sh
+        container: qc.doc_mint_dramatic_roc
       github.com/PalomoIFCA/badgr-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.blush_creative_giraffe.sh
-        container: qc.doc_horizon_mysterious_kraken
+        - /usr/bin/env sh .sqa/script.cherry_joyful_dhole.sh
+        container: qc.doc_persimmon_studious_impala
       github.com/PalomoIFCA/badgr-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.copper_shy_phoenix.sh
-        container: qc.doc_wine_brave_capybara
+        - /usr/bin/env sh .sqa/script.thunder_mindful_nighthawk.sh
+        container: qc.doc_apricot_humble_hawk
   QC.Lic:
     repos:
       github.com/PalomoIFCA/badgr-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.coral_passionate_cheetah.sh
-        container: qc.lic_indigo_independent_finch
+        - /usr/bin/env sh .sqa/script.scarlet_apathetic_kangaroo.sh
+        container: qc.lic_fandango_goofy_koala
   QC.Sec:
     repos:
       github.com/PalomoIFCA/badgr-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.coffee_optimistic_rabbit.sh
-        container: qc.sec_glacier_helpful_meerkat
+        - /usr/bin/env sh .sqa/script.steel_dizzy_platypus.sh
+        container: qc.sec_cerulean_industrious_termite
   QC.Sty:
     repos:
       github.com/PalomoIFCA/badgr-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ice_thankful_snail.sh
-        container: qc.sty_blush_cranky_quokka
+        - /usr/bin/env sh .sqa/script.kiwi_vibrant_cobra.sh
+        container: qc.sty_rust_polite_squirrel
       github.com/PalomoIFCA/badgr-server hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.clove_easygoing_rhinoceros.sh
-        container: qc.sty_echelon_nervous_starfish
+        - /usr/bin/env sh .sqa/script.tan_tranquil_cobra.sh
+        container: qc.sty_cobalt_whimsical_thrush
       github.com/PalomoIFCA/badgr-server jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.horizon_cheerful_goat.sh
-        container: qc.sty_marigold_calm_chinchilla
+        - /usr/bin/env sh .sqa/script.gold_hopeful_gull.sh
+        container: qc.sty_lavender_audacious_spren
   QC.Uni:
     repos:
       github.com/PalomoIFCA/badgr-server pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnamon_brave_pangolin.sh
-        container: qc.uni_polar_rustic_toucan
+        - /usr/bin/env sh .sqa/script.wheat_agile_squirrel.sh
+        container: qc.uni_lilac_dramatic_spren
   QC.Ver:
     repos:
       github.com/PalomoIFCA/badgr-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.burgundy_positive_caiman.sh
-        container: qc.ver_zinnia_amiable_whale
+        - /usr/bin/env sh .sqa/script.forest_lucky_cougar.sh
+        container: qc.ver_bluebell_balanced_axolotl
 timeout: 5400
