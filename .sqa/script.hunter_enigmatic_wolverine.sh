@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/PalomoIFCA/badgr-server &&
-    mdl --json  .
+cd github.com/open-educational-badges/badgr-server &&
+    get_git_tags.py
 )

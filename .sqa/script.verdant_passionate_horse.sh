@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/PalomoIFCA/badgr-server &&
-    jsonlint-cli "**/*.json"
+cd github.com/open-educational-badges/badgr-server &&
+    licensee detect . --confidence 60 --json 
 )

@@ -4,69 +4,69 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/PalomoIFCA/badgr-server:
+    github.com/open-educational-badges/badgr-server:
       branch: develop
-      repo: https://github.com/PalomoIFCA/badgr-server
+      repo: https://github.com/open-educational-badges/badgr-server
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/PalomoIFCA/badgr-server git:
+      github.com/open-educational-badges/badgr-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.mauve_smart_moose.sh
-        container: qc.acc_olive_sweet_jaguar
+        - /usr/bin/env sh .sqa/script.ivory_upbeat_dugong.sh
+        container: qc.acc_malachite_tactful_turkey
   QC.Doc:
     repos:
-      github.com/PalomoIFCA/badgr-server find_doc_files.py:
+      github.com/open-educational-badges/badgr-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.royal_silly_falcon.sh
-        container: qc.doc_cream_amused_stingray
-      github.com/PalomoIFCA/badgr-server git:
+        - /usr/bin/env sh .sqa/script.currant_silly_narwhal.sh
+        container: qc.doc_iris_outgoing_hydra
+      github.com/open-educational-badges/badgr-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.ecru_adaptable_narwhal.sh
-        container: qc.doc_raven_loving_kiwi
-      github.com/PalomoIFCA/badgr-server markdownlint:
+        - /usr/bin/env sh .sqa/script.raspberry_ardent_opossum.sh
+        container: qc.doc_sunset_pensive_hippopotamus
+      github.com/open-educational-badges/badgr-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ice_restless_crow.sh
-        container: qc.doc_turquoise_persistent_catfish
+        - /usr/bin/env sh .sqa/script.grege_restless_quokka.sh
+        container: qc.doc_walnut_eager_echidna
   QC.Lic:
     repos:
-      github.com/PalomoIFCA/badgr-server licensee:
+      github.com/open-educational-badges/badgr-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snow_studious_seal.sh
-        container: qc.lic_fern_stoic_opossum
+        - /usr/bin/env sh .sqa/script.verdant_passionate_horse.sh
+        container: qc.lic_rose_serene_dugong
   QC.Sec:
     repos:
-      github.com/PalomoIFCA/badgr-server bandit:
+      github.com/open-educational-badges/badgr-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.ash_inspired_antelope.sh
-        container: qc.sec_rust_outgoing_platypus
+        - /usr/bin/env sh .sqa/script.lagoon_hardworking_gerbil.sh
+        container: qc.sec_incarnadine_polite_iguana
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/badgr-server flake8:
+      github.com/open-educational-badges/badgr-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sunset_helpful_cheetah.sh
-        container: qc.sty_glaucous_rustic_bat
-      github.com/PalomoIFCA/badgr-server hadolint:
+        - /usr/bin/env sh .sqa/script.white_warm_eel.sh
+        container: qc.sty_forest_spirited_falcon
+      github.com/open-educational-badges/badgr-server hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.tangerine_brave_emu.sh
-        container: qc.sty_prussian_melancholy_wolverine
-      github.com/PalomoIFCA/badgr-server jsonlint:
+        - /usr/bin/env sh .sqa/script.goldenrod_sociable_dugong.sh
+        container: qc.sty_clove_grumpy_spren
+      github.com/open-educational-badges/badgr-server jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.persimmon_scrappy_jaguar.sh
-        container: qc.sty_mist_lively_serval
+        - /usr/bin/env sh .sqa/script.thunder_patient_lemur.sh
+        container: qc.sty_paprika_resilient_spren
   QC.Uni:
     repos:
-      github.com/PalomoIFCA/badgr-server pytest:
+      github.com/open-educational-badges/badgr-server pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.pumpkin_exuberant_peacock.sh
-        container: qc.uni_harlequin_tranquil_heron
+        - /usr/bin/env sh .sqa/script.flamingo_spirited_moth.sh
+        container: qc.uni_lime_positive_dingo
   QC.Ver:
     repos:
-      github.com/PalomoIFCA/badgr-server get_git_tags.py:
+      github.com/open-educational-badges/badgr-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pistachio_passionate_cougar.sh
-        container: qc.ver_cosmos_sympathetic_beaver
+        - /usr/bin/env sh .sqa/script.hunter_enigmatic_wolverine.sh
+        container: qc.ver_incarnadine_bold_starfish
 timeout: 5400
