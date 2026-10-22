@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/open-educational-badges/badgr-server &&
+cd github.com/PalomoIFCA/badgr-server &&
     hadolint Dockerfile --failure-threshold error
 )
