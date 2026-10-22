@@ -5,7 +5,7 @@ config:
       branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/badgr-server:
-      branch: develop
+      branch: Documentation-update
       repo: https://github.com/PalomoIFCA/badgr-server
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/badgr-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.gunmetal_dreamy_snail.sh
-        container: qc.acc_cerise_reserved_hornbill
+        - /usr/bin/env sh .sqa/script.puce_affectionate_hydra.sh
+        container: qc.acc_yellow_exuberant_snail
   QC.Doc:
     repos:
       github.com/PalomoIFCA/badgr-server find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuchsia_courageous_crow.sh
-        container: qc.doc_fandango_wise_dugong
+        - /usr/bin/env sh .sqa/script.powder_enigmatic_uakari.sh
+        container: qc.doc_celadon_humble_bat
       github.com/PalomoIFCA/badgr-server git:
         commands:
-        - /usr/bin/env sh .sqa/script.flamingo_wondrous_alpaca.sh
-        container: qc.doc_harlequin_perky_toucan
+        - /usr/bin/env sh .sqa/script.cayenne_lively_crocodile.sh
+        container: qc.doc_nutmeg_jubilant_stork
       github.com/PalomoIFCA/badgr-server markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snow_nurturing_manta.sh
-        container: qc.doc_copper_savvy_flounder
+        - /usr/bin/env sh .sqa/script.wine_harmonious_beaver.sh
+        container: qc.doc_green_articulate_spider
   QC.Lic:
     repos:
       github.com/PalomoIFCA/badgr-server licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.mint_rustic_thrush.sh
-        container: qc.lic_purple_polite_panda
+        - /usr/bin/env sh .sqa/script.cobalt_productive_tiger.sh
+        container: qc.lic_onyx_feisty_coyote
   QC.Sec:
     repos:
       github.com/PalomoIFCA/badgr-server bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.porcelain_cautious_porcupine.sh
-        container: qc.sec_kiwi_cheerful_angelfish
+        - /usr/bin/env sh .sqa/script.mulberry_stoic_stork.sh
+        container: qc.sec_cardamom_ardent_sparrow
   QC.Sty:
     repos:
       github.com/PalomoIFCA/badgr-server flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lapis_funny_mandrill.sh
-        container: qc.sty_currant_aware_okapi
+        - /usr/bin/env sh .sqa/script.forest_tenacious_tiger.sh
+        container: qc.sty_copper_tenacious_porpoise
       github.com/PalomoIFCA/badgr-server hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.crimson_easygoing_koala.sh
-        container: qc.sty_snow_responsible_grizzly
+        - /usr/bin/env sh .sqa/script.flint_lively_pegasus.sh
+        container: qc.sty_red_warm_okapi
       github.com/PalomoIFCA/badgr-server jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cadet_energetic_kraken.sh
-        container: qc.sty_ivory_kind_hedgehog
+        - /usr/bin/env sh .sqa/script.celadon_brilliant_leopard.sh
+        container: qc.sty_forest_curious_kookaburra
   QC.Uni:
     repos:
       github.com/PalomoIFCA/badgr-server pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.clove_confident_pegasus.sh
-        container: qc.uni_cinnabar_melancholy_iguana
+        - /usr/bin/env sh .sqa/script.grape_bright_anaconda.sh
+        container: qc.uni_snow_agile_python
   QC.Ver:
     repos:
       github.com/PalomoIFCA/badgr-server get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.walnut_honest_stingray.sh
-        container: qc.ver_jet_elated_griffin
+        - /usr/bin/env sh .sqa/script.poppy_fair_jackal.sh
+        container: qc.ver_flint_sociable_otter
 timeout: 5400
